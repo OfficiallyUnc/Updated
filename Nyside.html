@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My story as a soldier</title>
+        <link rel="stylesheet" href="TOAW2.css" />
+        <meta name="description" content="En personlig fortælling om mit liv som soldat" />
+        <meta name="keywords" content="soldat, historie, udfordringer, minder, kamp, galleri" />
+         <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+            .video-background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            .content {
+                position: relative;
+                z-index: 1;
+                color: white;
+                text-align: center;
+            }
+             #speechButtonContainer {
+                 margin: 10px;
+                 display: flex;
+                 justify-content: center;
+             }
+             
+             #startSpeechButton, #stopSpeechButton {
+                 margin: 0 5px;
+             }      
+             footer {
+                 position: fixed;
+                 bottom: 0;
+                 left: 0;
+                 padding: 10px;
+                 color: white;
+                 font-size: 12px;
+             }
+        </style>
+    </head>
+    <body id="backgroundSlideshow">
+        <div class="content">   
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Nyside.html">My story</a></li>
+                <li><a href="Challenges.html">Challenges</a></li>
+                <li><a href="Memories.html">Memories</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="ReadMore.html">Read more</a></li>
+                
+            </ul>
+            <div class="slideshow-container">
+                <header>
+                    <h1>My story as a soldier</h1>
+                </header>
+                <main>
+                    <audio id="audioPlayer">
+                        <source src="ElevenLabs_2024-10-10T19_11_05_BO2_ivc_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="audio-controls">
+                        <button id="playButton">Play</button>
+                        <button id="pauseButton">Pause</button>
+                    </div>
+                    <section>
+                        <h2>Welcome to my world</h2>
+                        <p>Tale of a warrior</p>
+                    </section>
+                </main>
+                <footer><p>&copy;2024 Tale of a warrior</p></footer>
+            </div>
+        </div>
+        <script src="TOAW.js"></script>
+    </body>
+</html>
