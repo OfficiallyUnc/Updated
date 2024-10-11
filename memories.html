@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Memories</title>
+        <link rel="stylesheet" href="TOAW2.css" />
+    </head>
+    <body class="memories-page">
+        <div class="content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Nyside.html">My story</a></li>
+                <li><a href="services.html">Challenges</a></li>
+                <li><a href="products.html">Memories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Galleri">Read more</a></li>
+                
+            </ul>
+            <h1>Memories</h1>
+            <section id="memories">
+            <p>
+                My time on the battlefield was not only a place of challenges but also a canvas of unforgettable memories. Each mission, each encounter, left an indelible mark on my soul.
+            </p>
+            <p>
+                I remember the camaraderie shared with my fellow soldiers, the moments of laughter amidst the chaos, and the silent understanding that bound us together. These memories are the threads that weave the fabric of my journey.
+            </p>
+            <p>
+                There were times of triumph, where the taste of victory was sweet, and times of sorrow, where the weight of loss was heavy. Each memory, whether joyous or painful, contributed to the person I have become.
+            </p>
+            <p>
+                The battlefield taught me resilience, the importance of brotherhood, and the value of every fleeting moment. These memories are not just stories of the past but lessons that continue to guide me.
+            </p>
+            <p>
+                As I reflect on these memories, I am reminded of the strength found in unity, the courage born from adversity, and the enduring spirit of a soldier. These are the memories that define my legacy.
+            </p>
+        </section>
+        </div>
+        <audio id="audioPlayer" src="Mindertrorjeg.mp3"></audio>
+    <div class="audio-controls">
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const playButton = document.getElementById('playButton');
+            const pauseButton = document.getElementById('pauseButton');
+
+            playButton.addEventListener('click', function() {
+                audioPlayer.play();
+            });
+
+            pauseButton.addEventListener('click', function() {
+                audioPlayer.pause();
+            });
+        });
+    </script>
+    </body>
+</html>
